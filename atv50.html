@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function formatar_Produto(produto) {
+            return `Produto: ${produto.nome} - Preço: R$ ${produto.preco.toFixed(2)}`;
+}
+
+        const produto = {
+        nome: "Camiseta",
+        preco: 50.00
+};
+
+console.log(formatar_Produto(produto));
+    </script>
+</body>
+</html>

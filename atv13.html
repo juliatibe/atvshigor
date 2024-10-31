@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var letra = prompt("Digite uma letra")
+        var letrafinal = letra.toUpperCase()
+        var vogais = ['A', 'E', 'I', 'O', 'U']
+        var consoante = true
+
+        for(i in vogais){
+            if(vogais[i] == letrafinal){
+                alert(letra + "é uma vogal")
+                consoante = false
+                break
+            }
+        }
+        if(consoante){
+            alert(letra + "é uma consoante")
+        }
+    </script>
+</body>
+</html>

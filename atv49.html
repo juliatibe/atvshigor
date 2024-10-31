@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function idade_dirigir(idade){
+            if(idade >= 18){
+                console.log("Você está apto à dirigir!")
+            }
+            else{
+                console.log("Você não pode dirigir.")
+            }
+        }
+
+        const pessoa = {
+            nome: 'Julia',
+            idade: 16 ,
+            cidade: 'Aracatuba'
+        }
+
+        idade_dirigir(pessoa.idade)
+    </script>
+</body>
+</html>

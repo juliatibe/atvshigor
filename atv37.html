@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         function segundo(array) {
+            var maior = -1;
+            var segundo = -1;
+
+            for (const num of array) {
+                if (num > maior) {
+                    segundo = maior;
+                    maior = num;
+                } else if (num > segundo && num < maior) {
+                    segundo = num;
+                }
+            }
+
+            return segundo;
+        }
+
+        const numeros = [10, 20, 30, 40, 50];
+        alert(segundo(numeros)); 
+    </script>
+</body>
+</html>
